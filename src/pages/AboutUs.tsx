@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Pranav Kumar",
-    role: "Backend And Data Enginner",
+    role: "Backend And Data Engineer",
     image: "test.png",
     github: "https://github.com/GitPranav04",
     linkedin: "https://www.linkedin.com/in/pranav-kumar-410a70251/",
