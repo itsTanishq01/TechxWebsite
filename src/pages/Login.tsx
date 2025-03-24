@@ -124,7 +124,7 @@ const Login = () => {
     <div className="container max-w-md mx-auto py-16 px-4">
       <div className="glass-card p-8 rounded-xl animate-scale-in shadow-md">
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold mb-2">Welcome to FarmAI</h1>
+          <h1 className="text-2xl font-bold mb-2">Welcome to KhetSeva</h1>
           <p className="text-muted-foreground">Sign in to access your dashboard</p>
         </div>
         
