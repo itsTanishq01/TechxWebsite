@@ -1,5 +1,5 @@
 
-# FarmgineerHub
+# Khet Seva
 
 An innovative agriculture platform combining AI, IoT, and agricultural expertise to enhance farming productivity and sustainability.
 
@@ -27,19 +27,10 @@ This project is built with:
 Follow these steps to set up the project locally:
 
 ```sh
-# Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Navigate to the project directory
-cd farmgineer-hub
-
-# Install dependencies
-npm install
-
-# Start the development server
+TO Run:
 npm run dev
 ```
 
 ## Deployment
+Vercel: https://khetseva.vercel.app/
 
-This project can be deployed to any static site hosting service like Netlify, Vercel, or GitHub Pages.
