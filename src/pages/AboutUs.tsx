@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Rahul Lenka",
-    role: "Backend Developer",
+    role: "ML Engineer",
     image: "test.png",
     github: "https://github.com/rxhul08",
     linkedin: "https://www.linkedin.com/in/rahul-lenka-3b7018238/",
@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Pranav Kumar",
-    role: "ML Engineer",
+    role: "Backend And Data Enginner",
     image: "test.png",
     github: "https://github.com/GitPranav04",
     linkedin: "https://www.linkedin.com/in/pranav-kumar-410a70251/",
@@ -47,7 +47,7 @@ const teamMembers = [
   },
   {
     name: "Atulya Bihari Singh",
-    role: "DevOps Engineer",
+    role: "Tester",
     image: "test.png",
     github: "https://github.com/Atulya048",
     linkedin: "https://www.linkedin.com/in/atulya-bihari-singh-0b3398248/",
