@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 240 5.3% 96%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 90%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Added enhanced border color for better visibility in light mode */
+    --tile-border: 240 5.9% 75%;
+    
+    /* Soil analysis theme colors */
+    --soil-primary: 122 45% 31%;
+    --soil-primary-light: 120 41% 94%;
+    --soil-accent: 122 42% 39%;
+    --soil-text: 0 0% 20%;
+    --soil-text-light: 0 0% 40%;
+    --soil-background: 0 0% 98%;
+    --soil-card: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Border color in dark mode can remain the same */
+    --tile-border: 240 3.7% 15.9%;
+    
+    /* Soil analysis theme colors in dark mode */
+    --soil-primary: 122 45% 40%;
+    --soil-primary-light: 122 35% 20%;
+    --soil-accent: 122 42% 45%;
+    --soil-text: 0 0% 90%;
+    --soil-text-light: 0 0% 70%;
+    --soil-background: 240 10% 3.9%;
+    --soil-card: 240 10% 5%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+  
+  .custom-cursor {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><circle cx='8' cy='8' r='8' fill='white' opacity='0.5'/></svg>") 8 8, auto;
+  }
+  
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20 shadow-sm;
+  }
+
+  .glass-card {
+    @apply bg-white/80 dark:bg-black/30 backdrop-blur-md border border-[#aaaaab] dark:border-white/10 shadow-md;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .menu-link {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  
+  .product-card {
+    @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg;
+  }
+  
+  .enhanced-tile {
+    @apply border border-[#aaaaab] shadow-md dark:border-border;
+  }
+  
+  .soil-input:focus {
+    @apply border-[#2c7d32] shadow-[0_0_0_2px_rgba(44,125,50,0.1)] outline-none;
+  }
+  
+  .soil-spinner {
+    @apply w-10 h-10 mx-auto mb-4 border-2 border-[rgba(44,125,50,0.1)] rounded-full border-t-[#2c7d32] animate-spin;
+  }
+  
+  .soil-result-item {
+    @apply py-3 border-b border-b-[rgba(0,0,0,0.05)] flex items-center gap-2.5 text-lg;
+  }
+  
+  .soil-result-item:last-child {
+    @apply border-b-0;
+  }
+  
+  .soil-tooltip {
+    @apply relative inline-flex ml-1.5;
+  }
+  
+  .soil-tooltip-icon {
+    @apply flex items-center justify-center w-[18px] h-[18px] rounded-full bg-[#f0f0f0] text-[#666] text-xs italic cursor-help;
+  }
+
+  .parameter-card {
+    @apply bg-black/5 dark:bg-white/5 border border-[#aaaaab] dark:border-gray-700 p-4 rounded-lg flex flex-col;
+  }
+  
+  /* Make all scrollbars hidden by default */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
