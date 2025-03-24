@@ -22,7 +22,7 @@ const AboutAppSettings = () => {
         
         <div>
           <Label className="text-muted-foreground text-sm">Released</Label>
-          <div className="font-medium">October 2023</div>
+          <div className="font-medium">March 2025</div>
         </div>
         
         <div>
