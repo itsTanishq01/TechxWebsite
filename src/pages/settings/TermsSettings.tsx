@@ -92,7 +92,7 @@ const TermsSettings = () => {
 
         <div className="pt-4 border-t">
           <p className="text-sm text-muted-foreground">
-            Last updated: October 2023
+            Last updated: March 2025
           </p>
         </div>
       </CardContent>
