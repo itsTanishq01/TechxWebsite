@@ -1,4 +1,3 @@
-
 import { RouteObject } from "react-router-dom";
 import Index from "@/pages/Index";
 import Login from "@/pages/Login";
@@ -13,6 +12,7 @@ import Tools from "@/pages/Tools";
 import IdealConditions from "@/pages/tools/IdealConditions";
 import FertilizerRecommendation from "@/pages/tools/FertilizerRecommendation";
 import IrrigationCalculator from "@/pages/tools/IrrigationCalculator";
+import WeatherForecast from "@/pages/tools/WeatherForecast";
 
 // Import the settings components
 import SettingsLayout from "@/pages/settings/SettingsLayout";
@@ -74,6 +74,10 @@ const protectedRoutes: RouteObject[] = [
   {
     path: "/tools/irrigation-calculator",
     element: <AppLayout><ProtectedRoute><IrrigationCalculator /></ProtectedRoute></AppLayout>
+  },
+  {
+    path: "/tools/weather-forecast",
+    element: <AppLayout><ProtectedRoute><WeatherForecast /></ProtectedRoute></AppLayout>
   }
 ];
 
