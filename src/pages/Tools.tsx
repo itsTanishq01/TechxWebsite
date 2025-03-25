@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { Sun, TestTube, Leaf, Beaker, Droplet } from "lucide-react";
+import { Sun, TestTube, Leaf, Beaker, Droplet, Cloud } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -29,6 +28,12 @@ const toolItems = [
     description: "Calculate water requirements for crops based on growth stage and field area.",
     icon: <Droplet className="h-12 w-12 mb-4 text-blue-500" />,
     path: "/tools/irrigation-calculator",
+  },
+  {
+    title: "Weather Forecast",
+    description: "Get accurate weather forecasts and alerts for your farm location.",
+    icon: <Cloud className="h-12 w-12 mb-4 text-sky-500" />,
+    path: "/tools/weather-forecast",
   },
   // Add more tools here in the future
 ];
