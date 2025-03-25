@@ -1,7 +1,6 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Wrench, ChevronDown, Sun, Beaker, Droplet } from "lucide-react";
+import { Menu, X, Wrench, ChevronDown, Sun, Beaker, Droplet, Cloud } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
@@ -48,7 +47,8 @@ export function Navbar() {
   const toolsItems: NavItem[] = [
     { name: "Ideal Growing Conditions", path: "/tools/ideal-conditions", icon: <Sun className="h-4 w-4 mr-1" /> },
     { name: "Fertilizer Recommendation", path: "/tools/fertilizer-recommendation", icon: <Beaker className="h-4 w-4 mr-1" /> },
-    { name: "Irrigation Calculator", path: "/tools/irrigation-calculator", icon: <Droplet className="h-4 w-4 mr-1" /> }
+    { name: "Irrigation Calculator", path: "/tools/irrigation-calculator", icon: <Droplet className="h-4 w-4 mr-1" /> },
+    { name: "Weather Forecast", path: "/tools/weather-forecast", icon: <Cloud className="h-4 w-4 mr-1" /> }
   ];
 
   // Authentication-dependent navigation items in the requested order
@@ -65,6 +65,7 @@ export function Navbar() {
   ] : [];
   
   return (
+    // ... keep existing code
     <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-background/80 border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
